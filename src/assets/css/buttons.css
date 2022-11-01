@@ -1,0 +1,48 @@
+.btn-perfil{
+    border-radius: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5em;
+    padding: 0.8em 2em;
+    width: fit-content;
+
+    font-weight: bold;
+    background-color: transparent;
+    transition: 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.btn-perfil svg{
+    width: 2em;
+    aspect-ratio: 1;
+    fill: white;
+}
+
+.btn-perfil:hover{
+    background-color: var(--gray-input);
+}
+
+.btn-perfil:focus-within{
+    transition: none;
+    outline: white 2px solid;
+}
+
+.btn-perfil a{
+    transition: none;
+    text-decoration: none;
+    color: currentColor;
+}
+
+.btn-perfil a:focus{
+    outline: none;
+}
+
+/* Responsividade*/
+@media screen and (max-width: 1000px){
+    .btn-perfil a{
+        display: none;
+    }
+}
